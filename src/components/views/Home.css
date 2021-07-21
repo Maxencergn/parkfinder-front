@@ -1,0 +1,40 @@
+.first-presentation {
+  width: 100%;
+  height: 45vh;
+  background-color: #b16357;
+  display: flex;
+  justify-content: space-around;
+}
+
+.first-presentation img {
+  width: 350px;
+  height: auto;
+}
+
+.first-presentation-container {
+  width: 40%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  letter-spacing: 2px;
+}
+
+.first-presentation-container-img {
+  width: 40%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+}
+
+.first-presentation-container h1 {
+  font-size: 36px;
+}
+
+.first-skateparks {
+  width: 100%;
+  height: 45vh;
+}
