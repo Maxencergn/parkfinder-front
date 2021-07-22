@@ -1,0 +1,59 @@
+.addpark-container {
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.container-form {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-form input {
+  margin-top: 30px;
+  height: 40px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  font-size: 16px;
+  background-color: white;
+  padding: 12px 20px 12px 40px;
+}
+
+.container-form textarea {
+  margin-top: 30px;
+  height: 100px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  padding: 12px 20px 12px 40px;
+}
+
+.container-form button {
+  margin-top: 30px;
+  border-radius: 5px;
+  width: 20%;
+  height: 40px;
+  border: none;
+}
+
+.img-search {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../../images/skater.png);
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-search h1 {
+  font-weight: 900;
+  font-size: 50px;
+  opacity: 1;
+}
