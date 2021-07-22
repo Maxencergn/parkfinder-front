@@ -1,23 +1,9 @@
-/* eslint-disable no-alert */
-import { React, useState, useEffect } from 'react';
+import { React } from 'react';
 import './Home.css';
-import axios from 'axios';
+import SliderApi from '../commons/SliderApi';
+import AddSearch from '../commons/AddSearch';
 
 function Home() {
-  const [skateparks, setSkateparks] = useState([]);
-  const { REACT_APP_BACKEND_URL } = process.env;
-
-  useEffect(() => {
-    axios
-      .get(`${REACT_APP_BACKEND_URL}/api/skateparks`)
-      .then((response) => {
-        setSkateparks(response.data);
-      })
-      .catch((error) => {
-        alert(error);
-      });
-  }, []);
-
   return (
     <div>
       <div className="first-presentation">
@@ -43,14 +29,12 @@ function Home() {
           </p>
         </div>
       </div>
-      <div className="first-skateparks">
-        {skateparks.map((skatepark) => (
-          <div key={skatepark.id}>
-            <p>{skatepark.name}</p>
-          </div>
-        ))}
+      <div>
+        <AddSearch />
       </div>
-      <div className="first-add-find">bla</div>
+      <div>
+        <SliderApi />
+      </div>
     </div>
   );
 }

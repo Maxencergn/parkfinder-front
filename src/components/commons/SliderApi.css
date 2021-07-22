@@ -1,0 +1,101 @@
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #353e55;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-container h1 {
+  margin-top: 60px;
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: white;
+}
+
+.first-skateparks {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  margin-bottom: 30px;
+}
+
+.first-skateparks-wrapper {
+  height: 100%;
+  display: inline-flex;
+}
+
+
+
+.card {
+  height: 300px;
+  width: 280px;
+  background-color: #eee;
+  border: solid 1px rgb(206, 206, 206);
+  border-radius: 5px;
+  flex-shrink: 0;
+  margin: 15px;
+  margin-bottom: 40px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 170px;
+}
+
+.card h3,
+.card p {
+  padding: 6px 12px;
+  margin: 0;
+}
+
+.card p {
+  color: #5e5e5e;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.card svg {
+  margin-right: 10px;
+}
+
+.card button {
+  border-radius: 5px;
+  height: 25px;
+  color: white;
+  background-color: #353e55;
+  margin-left: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+  background: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(160, 160, 160);
+  -webkit-border-radius: 1ex;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+  background: #000;
+}
+
+@media screen and (max-width: 892px) {
+  .slider-container h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
